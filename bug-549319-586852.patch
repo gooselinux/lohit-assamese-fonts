@@ -1,0 +1,20 @@
+diff -rup lohit-assamese-2.4.3/66-lohit-assamese.conf lohit-assamese-2.4.3_mod/66-lohit-assamese.conf
+--- lohit-assamese-2.4.3/66-lohit-assamese.conf	2009-09-09 15:18:33.000000000 +0530
++++ lohit-assamese-2.4.3_mod/66-lohit-assamese.conf	2010-05-04 20:36:01.000000000 +0530
+@@ -2,13 +2,13 @@
+ <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+ <fontconfig>
+ <match>
+-  <test name="lang" compare="contains">
+-    <string>as</string>
++  <test name="lang">
++    <string>as-in</string>
+   </test>
+   <test name="family">
+     <string>sans-serif</string>
+   </test>
+-  <edit name="family" mode="prepend_first" binding="same">
++  <edit name="family" mode="prepend">
+     <string>Lohit Assamese</string>
+   </edit>
+ </match>
